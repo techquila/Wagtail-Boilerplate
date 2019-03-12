@@ -1,9 +1,9 @@
 {
     "project_name": "Client-Project",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
-    "author_name": "You",
-    "email": "you@example.com",
-    "description": "A short description of the project.",
+    "author_name": "@sodoscarfono",
+    "email": "sod@oscarfono.com",
+    "description": "A fully featured, production ready, dockerized instance of Wagtail CMS, ready to customize for your latest restaurant customer.",
     "domain_prod": "example.com",
     "domain_stage": "stage.example.com",
     "ssh_prod": "user@prod-server",

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Django settings for Fröjd Django projects.
+Django settings for Django projects.
 """
 from __future__ import absolute_import, unicode_literals
 
@@ -148,8 +148,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-TIME_ZONE = "Europe/Stockholm"
-LANGUAGE_CODE = "sv-SE"
+TIME_ZONE = "Pacific/Auckland"
+LANGUAGE_CODE = "en-NZ"
 SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
@@ -206,7 +206,7 @@ if get_env("AWS_ACCESS_KEY_ID", ""):
     AWS_S3_CALLING_FORMAT = OrdinaryCallingFormat()
 
     # Retrieve S3 files using https, with a bucket that contains a dot.
-    S3Connection.DefaultHost = "s3-eu-west-1.amazonaws.com"
+    S3Connection.DefaultHost = "s3-ap-southeast-2.amazonaws.com"
 
     DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
     THUMBNAIL_DEFAULT_STORAGE = "storages.backends.s3boto.S3BotoStorage"

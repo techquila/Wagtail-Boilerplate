@@ -1,6 +1,6 @@
 # Client-Project
 
-A short description of the project.
+A fully featured, production ready, dockerized instance of Wagtail CMS, ready to customize for your latest restaurant customer.
 
 
 ## Index

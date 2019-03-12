@@ -1,5 +1,5 @@
 FROM python:3.6
-MAINTAINER Frojd
+MAINTAINER Techquila
 LABEL version="v0.1.0"
 
 ENV PYTHONUNBUFFERED=1 \
@@ -23,9 +23,7 @@ ADD . /app/
 RUN apt-get update \
     && apt-get install -y netcat \
     && apt-get install -y binutils libproj-dev gdal-bin \
-    && apt-get install -y vim curl gettext \
-    && rm -rf /var/lib/apt/lists/* \
-    && curl -L https://raw.githubusercontent.com/Frojd/Wagtail-Boilerplate/develop/config/.vimrc > ~/.vimrc
+    && rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update && apt-get -y install postgresql
 

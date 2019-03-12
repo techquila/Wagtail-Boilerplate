@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: frojd/{{cookiecutter.project_slug}}_web
+    image: techquila/{{cookiecutter.project_slug}}_web
     build: ./src
     volumes:
       - "./src:/app"
